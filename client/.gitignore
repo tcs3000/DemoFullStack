@@ -1,3 +1,5 @@
+.circleci-dev
+
 # Logs
 logs
 *.log
