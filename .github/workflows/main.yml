@@ -1,4 +1,5 @@
 # Name of workflow
+<<<<<<< HEAD
 name: Lint and Test workflow
 
 # Trigger workflow on all pull requests
@@ -6,11 +7,20 @@ on:
   push:
     branches:
       - main
+=======
+name: Lint workflow
+
+# Trigger workflow on all pull requests
+on:
+>>>>>>> 77bebc8494ba99c60a8777b689a704b748ff6d9e
   pull_request:
     branches:
       - develop
       - staging
+<<<<<<< HEAD
       - main
+=======
+>>>>>>> 77bebc8494ba99c60a8777b689a704b748ff6d9e
 
 # Jobs to carry out
 jobs:
@@ -36,6 +46,7 @@ jobs:
       # Run lint
       - name: Run Lint
         run: npm run lint
+<<<<<<< HEAD
 
       # Run build
       - name: Run Build
@@ -44,3 +55,5 @@ jobs:
       # Run tests
       - name: Run Tests
         run: npm run test
+=======
+>>>>>>> 77bebc8494ba99c60a8777b689a704b748ff6d9e
